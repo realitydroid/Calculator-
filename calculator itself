@@ -1,0 +1,25 @@
+while True:
+    operator = input("select operator: +,-,*,/   press q to end session: ")
+    if operator == 'q':
+        print("good session")
+        break
+    else:
+        num1 = float(input("Number 1:"))
+        num2 = float(input("Number 2:"))
+        if operator == '+':
+            print("calculating", num1, operator, num2)
+            print(num1 + num2)
+        elif operator == '-':
+            print("calculating", num1, operator, num2)
+            print(num1 - num2)
+        elif operator == '*':
+            print("calculating", num1, operator, num2)
+            print(num1 * num2)
+        elif operator == '/':
+            if num2 == 0:
+                print("calculating", num1, operator, num2)
+                print("undefined, please try again")
+            else:
+                print("calculating", num1, operator, num2)
+                print(num1 / num2)
+        else: print("invalid operator please try again")
